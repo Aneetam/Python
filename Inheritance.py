@@ -19,6 +19,9 @@ class ElectronicItem(Product):
         self.warranty_in_months=warranty_in_months
     def get_warranty(self):
             return self.warranty_in_months
+    def display_electronic_product_details(self):
+        self.display_product_details()
+        print("Warranty : {}".format(self.warranty_in_months))
 class GroceryItem(Product):
     pass
        
